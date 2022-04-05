@@ -22,5 +22,5 @@ function validate(callback)
 function Redirect()
 {
     // Myform.action="/main.html";
-    Myform.setAttribute("action","todo.html");
+    Myform.setAttribute("action","/todo.html");
 }

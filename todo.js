@@ -8,16 +8,36 @@ xhttp.onreadystatechange = function(){
         var radioid="";
         for(var i=0; i<Response.length; i++)
         {
+            // const x = document.createElement("input");
+            // x.setAttribute("type","radio");
+            // x.setAttribute("value",Response[i].title);
+            // x.setAttribute("id",Response[i].id);
+            // x.setAttribute("class","form-check-input");
+            // radioid =Response[i].id;
+            // x.setAttribute("onchange","init("+radioid+")");
+            // document.getElementById("todo").appendChild(x);
+            // const z = document.createElement("label");
+            // document.getElementById("todo").appendChild(z);
+            // z.innerText=`${Response[i].title}\n `;
+            
             const x = document.createElement("input");
-            x.setAttribute("type","radio");
+            const y = document.createElement("div");
+            y.setAttribute("class","form-check");
+            // y.setAttribute("class","form-switch");
+            y.setAttribute("id","switch"+Response[i].id)
+            document.getElementById("todo").appendChild(y);
+            x.setAttribute("type","checkbox");
             x.setAttribute("value",Response[i].title);
             x.setAttribute("id",Response[i].id);
+            x.setAttribute("class","form-check-input");
             radioid =Response[i].id;
             x.setAttribute("onchange","init("+radioid+")");
-            document.getElementById("todo").appendChild(x);
+            // document.getElementById("todo").appendChild(x);
             const z = document.createElement("label");
-            document.getElementById("todo").appendChild(z);
+            // document.getElementById("todo").appendChild(z);
             z.innerText=`${Response[i].title}\n `;
+            y.append(x);
+            y.append(z);
         }
     }
 }
@@ -31,13 +51,22 @@ var idarr=[];
 function verify(k)
 {
     return new Promise(function(resolve,reject){
+        var stat = idarr.includes(k);
+        if (stat == false)
+        {
         idarr.push(k);
         console.log(k);
         if(idarr.length>=5){
             resolve();
         }
         else{
-            reject("not completed");
+            reject("length is " +idarr.length +" hence not completed");
+        }
+        }
+        else
+        {
+        idarr.pop(k);
+        idarr.forEach(function(){console.log(e);})
         }
     })    
     

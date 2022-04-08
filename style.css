@@ -1,0 +1,72 @@
+html
+{
+height: 100%;
+padding: 0;
+margin: 0;
+overflow: auto;
+}
+body
+{
+  overflow: auto;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url(images/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+h4
+{
+    color:#fff;
+}
+.error
+{
+color: red;
+display: none;
+text-align: left;
+font-size: 14px;
+font-weight: 600;
+}
+.custom-row
+{
+    background: -webkit-linear-gradient(to right, #fc466b, #3d2678); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #3d2678 40%, #fc466b);
+
+    animation: myAnim 3s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+    0% {
+      transform: scale(0);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  .btn-grad {
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
+  }
+  .btn-grad {
+     margin: 10px;
+     padding: 15px 45px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     box-shadow:  0 0 10px #eeeeee70;
+     border-radius: 10px;
+     display: block;
+     border: 1px solid transparent;
+     display: inline-block;
+   }
+
+   .btn-grad:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
+  
+  

@@ -65,5 +65,5 @@ pwderr.style.display="none";
 function Redirect()
 {
     // Myform.action="/main.html";
-    Myform.setAttribute("action","/todo.html");
+    Myform.setAttribute("action","/Todo_App/todo.html");
 }

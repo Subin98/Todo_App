@@ -22,22 +22,22 @@ xhttp.onreadystatechange = function(){
             
             const x = document.createElement("input");
             const y = document.createElement("div");
-            y.setAttribute("class","form-check");
-            // y.setAttribute("class","form-switch");
+            y.setAttribute("class","row alert alert-custom ");
             y.setAttribute("id","switch"+Response[i].id)
             document.getElementById("todo").appendChild(y);
             x.setAttribute("type","checkbox");
             x.setAttribute("value",Response[i].title);
             x.setAttribute("id",Response[i].id);
-            x.setAttribute("class","form-check-input");
+            x.setAttribute("class","col-2 mt-auto align-self-start col-0ffset custom-form");
             radioid =Response[i].id;
             x.setAttribute("onchange","init("+radioid+")");
-            // document.getElementById("todo").appendChild(x);
             const z = document.createElement("label");
-            // document.getElementById("todo").appendChild(z);
-            z.innerText=`${Response[i].title}\n `;
+            z.setAttribute("class","col")
+            z.innerText=`${Response[i].title} `;
             y.append(x);
             y.append(z);
+            
+            
         }
     }
 }

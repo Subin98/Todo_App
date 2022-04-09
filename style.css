@@ -4,6 +4,7 @@ height: 100%;
 padding: 0;
 margin: 0;
 overflow: auto;
+font-family: 'Grape Nuts', cursive!important;
 }
 body
 {
@@ -34,6 +35,11 @@ font-weight: 600;
     background: linear-gradient(45deg, #3d2678 40%, #fc466b);
 
     animation: myAnim 3s ease 0s 1 normal forwards;
+}
+.custom-nav
+{
+    background: -webkit-linear-gradient(to right, #fc466b, #3d2678); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #3d2678 40%, #fc466b);
 }
 
 @keyframes myAnim {
@@ -69,4 +75,12 @@ font-weight: 600;
      text-decoration: none;
    }
   
-  
+   .custom-form
+   {
+     height: 32px;
+   }
+  .alert-custom
+  {
+    color: #3d2678;
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+  }

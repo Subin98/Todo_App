@@ -36,10 +36,16 @@ xhttp.onreadystatechange = function(){
             z.innerText=`${Response[i].title} `;
             y.append(x);
             y.append(z);
-            
+            if(Response[i].completed==true)
+            {
+                x.setAttribute("checked","true");
+                x.setAttribute("disabled","true");
+            }
             
         }
     }
+
+
 }
 xhttp.open("GET","https://jsonplaceholder.typicode.com/todos",true);
 xhttp.send();

@@ -4,7 +4,6 @@ height: 100%;
 padding: 0;
 margin: 0;
 overflow: auto;
-font-family: 'Grape Nuts', cursive!important;
 }
 body
 {
@@ -16,6 +15,7 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    font-family: 'Fredoka One', cursive!important;
 }
 h4
 {
@@ -84,3 +84,5 @@ font-weight: 600;
     color: #3d2678;
     background: linear-gradient(to right, #c9d6ff, #e2e2e2);
   }
+
+ 

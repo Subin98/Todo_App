@@ -66,7 +66,7 @@ function verify(k)
         else
         {
         idarr.pop(k);
-        idarr.forEach(function(){console.log(e);})
+        idarr.forEach(function(e){console.log(e);})
         }
     })    
     
